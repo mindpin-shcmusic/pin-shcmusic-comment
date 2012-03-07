@@ -1,0 +1,17 @@
+# 实际开发的时候，database配置务必修改一下
+
+development:
+  adapter: mysql
+  encoding: utf8
+  database: comment-development
+  username: root
+  password: root
+  host: localhost
+
+test:
+  adapter: mysql
+  encoding: utf8
+  database: comment-test
+  username: root
+  password: root
+  host: localhost

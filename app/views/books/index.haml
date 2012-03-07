@@ -1,0 +1,5 @@
+-@books.each do |book|
+  %div
+    =book.name
+    =link_to "评论列表","/books/#{book.id}/comments"
+		
