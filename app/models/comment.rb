@@ -15,4 +15,10 @@ class Comment < ActiveRecord::Base
     end
   end
   
+  module CommentableMethods
+    def self.included(base)
+      base.has_many :comments,:as=>:model
+    end
+  end
+  
 end

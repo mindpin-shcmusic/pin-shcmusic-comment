@@ -1,5 +1,5 @@
 class Book < ActiveRecord::Base
-  has_many :comments,:as=>:model
+  include Comment::CommentableMethods
   
   validates :name, :presence => true
 end
